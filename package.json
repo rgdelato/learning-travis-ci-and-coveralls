@@ -1,0 +1,25 @@
+{
+  "name": "learning-travis-ci-and-coveralls",
+  "version": "1.0.0",
+  "description": "A simple demo repo to get CI and test coverage tools up and running",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "istanbul cover test/index.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgdelato/learning-travis-ci-and-coveralls.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgdelato/learning-travis-ci-and-coveralls/issues"
+  },
+  "homepage": "https://github.com/rgdelato/learning-travis-ci-and-coveralls#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.8",
+    "istanbul": "^0.4.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.4.0"
+  }
+}
