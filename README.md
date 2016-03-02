@@ -1,2 +1,2 @@
-# learning-travis-ci-and-coveralls
+# Learning Travis CI and Coveralls [![Build Status](https://travis-ci.org/rgdelato/learning-travis-ci-and-coveralls.svg?branch=master)](https://travis-ci.org/rgdelato/learning-travis-ci-and-coveralls) [![Coverage Status](https://coveralls.io/repos/github/rgdelato/learning-travis-ci-and-coveralls/badge.svg?branch=master)](https://coveralls.io/github/rgdelato/learning-travis-ci-and-coveralls?branch=master)
 A simple demo repo to get CI and test coverage tools up and running
