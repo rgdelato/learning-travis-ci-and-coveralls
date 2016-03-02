@@ -4,7 +4,8 @@
   "description": "A simple demo repo to get CI and test coverage tools up and running",
   "main": "src/index.js",
   "scripts": {
-    "test": "istanbul cover test/index.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "node test/index.js | tap-spec",
+		"coverage": "istanbul cover test/index.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
