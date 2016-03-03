@@ -4,8 +4,8 @@
   "description": "A simple demo repo to get CI and test coverage tools up and running",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test/index.js | tap-spec",
-		"coverage": "istanbul cover test/index.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "babel-node test/index.js | tap-spec",
+    "coverage": "istanbul cover test/index.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,12 @@
   },
   "homepage": "https://github.com/rgdelato/learning-travis-ci-and-coveralls#readme",
   "devDependencies": {
+    "babel-cli": "^6.6.4",
+    "babel-core": "^6.6.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "babelify": "^7.2.0",
     "coveralls": "^2.11.8",
     "istanbul": "^0.4.2",
     "tap-spec": "^4.1.1",

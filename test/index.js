@@ -1,9 +1,8 @@
-var test   = require('tape');
-var add    = require('../src/index').add;
-var addTwo = require('../src/index').addTwo;
+import test from 'tape';
+import { add, addTwo } from '../src/index';
 
 
-test('Testing some functions, but not all functions', function (assert) {
+test('Testing some functions, but not all functions', (assert) => {
 
 	assert.equal(
 		add(2, 3),
@@ -18,5 +17,4 @@ test('Testing some functions, but not all functions', function (assert) {
 	);
 
 	assert.end();
-
 });
