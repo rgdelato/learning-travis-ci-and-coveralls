@@ -1,5 +1,5 @@
 import test from 'tape';
-import { add, addTwo } from '../src/index';
+import { add, addTwo, addThree } from '../src/';
 
 
 test('Testing some functions, but not all functions', (assert) => {
