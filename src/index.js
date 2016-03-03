@@ -1,16 +1,18 @@
 
-var add = function (a, b) {
+var add = (a, b) => {
 	return a + b;
 };
 
-var addTwo = function (a) {
+var addTwo = (a) => {
 	return add(2, a);
 };
 
-var addThree = function (a) {
+var addThree = (a) => {
 	return add(3, a);
 };
 
-exports.add      = add;
-exports.addTwo   = addTwo;
-exports.addThree = addThree;
+export {
+	add,
+	addTwo,
+	addThree
+};
