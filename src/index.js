@@ -1,18 +1,49 @@
 
-var add = (a, b) => {
+const id = (x) => {
+	return x;
+};
+
+const add = (a, b) => {
 	return a + b;
 };
 
-var addTwo = (a) => {
-	return add(2, a);
+const multiply = (a, b) => {
+	return a * b;
 };
 
-var addThree = (a) => {
-	return add(3, a);
+const idf = (x) => {
+	return (() => {
+		return x;
+	});
 };
+
+const addf = (a) => {
+	return ((b) => {
+		return a + b;
+	});
+};
+
+const multiplyf = (a) => {
+	return ((b) => {
+		return a * b;
+	});
+};
+
+const applyf = (func) => {
+	return ((a) => {
+		return ((b) => {
+			return func(a, b);
+		});
+	});
+};
+
 
 export {
+	id,
 	add,
-	addTwo,
-	addThree
+	multiply,
+	idf,
+	addf,
+	multiplyf,
+	applyf
 };

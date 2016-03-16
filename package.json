@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "babel-node test/index.js | tap-spec",
-		"coverage": "nyc babel-node test/index.js && nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc babel-node test/index.js && nyc report --reporter=text-lcov | coveralls",
+    "coverage:local": "nyc babel-node test/index.js && nyc report && rm -rf .nyc_output"
   },
   "repository": {
     "type": "git",
